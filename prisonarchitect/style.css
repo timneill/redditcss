@@ -1,0 +1,3073 @@
+/* ==========================================================================*/
+/* README BEFORE EDITING
+
+This file is maintained in a code editor, and should NOT be modified in the
+Reddit interface. If any flair needs added, please either use the Github repo
+or add it to the "Needs Merged" Heading below. 2 tab spacing please.
+
+@TODO - Cleanup !important where possible
+@TODO - Indentation cleanup
+@TODO - Single line per element id/class declaration
+@TODO - Wiki Styles (Major)
+@TODO - Submit Page Styles (Major)
+@TODO - Comment/Comment Page Styles (Major)
+@TODO - Probably a lot more, but that's what I have so far.
+
+In addition, please be cautious of using !important, as it's made the code much
+more difficult to clean and maintain. I'm more than happy to share the fun of
+the maintenance & changing of the theme, I just want to keep things organized.
+- /u/chadsten
+
+Authors: McCheese, Chadsten (others just add here)
+
+*/
+/* ==========================================================================*/
+
+/* ==========================================================================*/
+/* Needs Merged */
+
+.search-result-listing {
+    background: #fdef52 url(%%sidebar-bg%%);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.combined-search-page .searchpane {
+    background: #fdef52 url(%%sidebar-bg%%);
+}
+
+/* ==========================================================================*/
+
+/* code goes here */
+
+/* Banner*/
+.titlebox .usertext-body .md ol {
+    list-style-type: none !important;
+    position: absolute;
+    display: block;
+    top: 142px;
+    left: 25px;
+    margin: 0px;
+    background: #fdef52 url(%%sidebar-bg%%);
+    border: none !important;
+    color: #333 !important;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    border-radius: 5px;
+    border: 0px solid #dbdbdb;
+    width: calc(100% - 376px);
+    padding: 15px 15px 15px 115px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body div.content {
+    margin: 0 350px 0px 5px !important;
+    padding: 15px 0px 0px !important;
+}
+
+/* Banner end */
+/* I've added /**/
+around the previous body div.content, which has padding of
+
+20
+px *
+
+/
+
+.submit-text:hover:before {
+    content: "Need help? Please post a screenshot!";
+    position: absolute;
+    z-index: 1;
+    right: 325px;
+    border: 2px solid #e88209;
+    background: #2C697D;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+/* ==========================================================================*/
+/* Global Styles */
+/* ==========================================================================*/
+
+.submit-text:hover:before {
+    content: "Need help? Please post a screenshot!";
+    position: absolute;
+    z-index: 1;
+    right: 325px;
+    border: 2px solid #e88209;
+    background: #2C697D;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+/* End of hover over text*/
+
+html {
+    position: relative;
+}
+
+body {
+    background-color: #2C697D;
+    color: #000000;
+}
+
+* {
+    border-radius: 0px !important;
+}
+
+.hover.pagename.redditname > a:before {
+    content: "r/";
+}
+
+input {
+    border: 1px solid #C1BFBF !important;
+}
+
+.rounded {
+    border-radius: 0px !important;
+}
+
+.roundfield, #REScommentSubToggle, #header-bottom-right, #userbarToggle {
+    border-radius: 0px !important;
+}
+
+.roundfield, .content.submit .info-notice, .linefield {
+    background-color: #F5F5F5;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #C1BFBF;
+}
+
+.entry {
+    padding: 3px;
+}
+
+.keyHighlight, .RES-keyNav-activeElement, div .RES-keyNav-activeElement {
+    outline-width: 0px !important;
+    background-color: transparent !important;
+    border-right: 1px solid #858585 !important;
+}
+
+a.title {
+    color: #333 !important;
+}
+
+a.title:hover {
+    color: #4D6277 !important;
+    text-decoration: none !important;
+}
+
+a.title:visited {
+    color: #C4C4C4 !important;
+}
+
+a.title:visited:hover {
+    color: #4D6277 !important;
+    text-decoration: none !important;
+}
+
+.footer li.title,
+.footer li a {
+    color: #fff;
+}
+
+/* ==========================================================================*/
+/* Upvote/Downvote Styles & Content */
+/* ==========================================================================*/
+
+.arrow.upmod {
+    background: url(%%up-prisoner%%) 0 0;
+}
+
+.arrow.downmod {
+    background: url(%%rsz-1guard%%) 0 0;
+}
+
+/* ==========================================================================*/
+/* Change colour of sticky text */
+/* ==========================================================================*/
+
+.stickied .title {
+    color: green !important;
+    font-weight: bold;
+    font-size: large;
+}
+
+.stickied .title:hover {
+    color: green !important;
+    font-weight: bold;
+    font-size: large;
+}
+
+.stickied .title:visited:hover {
+    color: green !important;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Adds background to stickied posts. */
+
+.linklisting .stickied {
+    border-bottom: 2px solid #e88209 !important;
+    background-color: #DAF0DD !important;
+}
+
+/* ==========================================================================*/
+/* Header */
+/* ==========================================================================*/
+
+#header {
+    height: 120px;
+    background: transparent url('%%header-bg%%') no-repeat top left;
+    border-bottom: 2px solid #e88209;
+}
+
+#header-bottom-right {
+    background-color: #262626;
+}
+
+#header-bottom-right a {
+    color: #efebe2;
+}
+
+.titlebox {
+    background: transparent;
+}
+
+#userbarToggle {
+    background-color: #262626 !important;
+    border-right-color: #0b0b0b !important;
+}
+
+#header-img-a {
+    display: inline-block;
+    margin: 47px 0 0 0; /* creates our top spacing in the header */
+}
+
+#sr-header-area {
+    text-transform: lowercase;
+    font-size: 100% !important;
+}
+
+#sr-header-area a {
+    font-size: 100% !important;
+}
+
+#userbarToggle.userbarHide,
+#userbarToggle.userbarShow {
+    background-color: #4D6277;
+    color: #4D6277;
+    width: 6px;
+    left: 0px;
+}
+
+#sr-header-area {
+    background-color: #FFFFFF;
+    color: #333333;
+    border-bottom: 1px solid #9A9A9A !important;
+}
+
+#RESShortcutsEditContainer,
+#RESShortcutsRight,
+#RESShortcutsAdd,
+#RESShortcutsTrash,
+#RESShortcutsLeft,
+#sr-more-link,
+#RESShortcutsSort {
+    background-color: #FAFAFA !important;
+}
+
+#header-bottom-right {
+    background-color: transparent;
+    color: #333333;
+    border: 0px solid #9A9A9A !important;
+    top: 96px !important;
+    height: 12px !important;
+    vertical-align: middle !important;
+    padding: 2px 5px 10px 5px !important;
+}
+
+#header-bottom-right a {
+    color: white;
+}
+
+/* ==========================================================================*/
+/* Navigation Menu */
+/* ==========================================================================*/
+
+.tabmenu {
+    margin: 0 0 -1px 0; /* negative margin to force menu items above the header border */
+}
+
+.tabmenu li {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0;
+}
+
+/* these important tags need removed */
+.tabmenu li a {
+    border: 0;
+    background-color: #935000;
+    border-bottom: 0px !important;
+    margin: 0 8px 0 0 !important;
+    font-weight: normal;
+    display: inline-block;
+    padding: 8px;
+    color: #efebe2;
+}
+
+.tabmenu li a:hover {
+    background-color: #e88209;
+    color: #fff !important;
+}
+
+.tabmenu li:last-of-type a {
+    margin-right: 0;
+}
+
+.tabmenu li.selected a {
+    background: #2C697D;
+    color: #333333;
+    border-bottom: 2px solid #2C697D !important;
+    font-size: 100%;
+    border: 2px solid #e88209;
+    font-weight: bold;
+}
+
+ul.tabmenu li.selected a {
+    color: #fff;
+}
+
+/* ==========================================================================*/
+/* Submit Post Page */
+/* ==========================================================================*/
+
+#link-desc:after {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: red;
+    content: "This tab is for LINK-BASED submissions. Please read the rules before submitting or risk being banned (rules not written yet)"
+}
+
+#text-desc:after {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: red;
+    content: "This tab is for TEXT-BASED submissions, it will not link anywhere."
+}
+
+/* submitting  */
+#newlink {
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+}
+
+#link-desc.infobar, #text-desc.infobar {
+    display: none !important;
+}
+
+.content > h1 {
+    margin: 0px 5px 5px 20px;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    padding: 5px;
+}
+
+.formtabs-content {
+    border-top: 4px solid #C1BFBF !important;
+    padding-top: 0px !important;
+}
+
+.formtabs-content div:nth-child(1), .formtabs-content div:nth-child(2) {
+    margin: 0px !important;
+}
+
+li.selected a.link-button, li.selected a.text-button {
+    border: 0 !important;
+    background: #2C697D !important;
+    color: #333333 !important;
+    border-left: 3px solid #4D6277 !important;
+    border-bottom: 0px !important;
+}
+
+a.link-button, a.text-button {
+    border: 0 !important;
+    background: #EFEFEF !important;
+    color: #333333 !important;
+    border-left: 3px solid #4D6277 !important;
+}
+
+/* Spoiler tags */
+a[href$="#spoiler"] {
+    background: #4D6277 !important;
+    color: #4D6277 !important;
+    border: 1px solid #4D6277;
+    padding-right: 1px;
+}
+
+a[href$="#spoiler"]:hover {
+    color: #FFF !important;
+}
+
+a[href$="#spoiler"]::before {
+    background: #FFF !important;
+    color: #000 !important;
+    padding: 0px 1px;
+    margin: 0px;
+    margin-right: 1px;
+}
+
+a[href$="#spoiler"]::before {
+    content: "Spoiler";
+}
+
+a[href$="#spoiler"][title]::before {
+    content: attr(title) " Spoiler";
+}
+
+/* ==========================================================================*/
+/* Posting Listing */
+/* ==========================================================================*/
+/*
+body div.content {
+  margin: 0 350px 0px 5px !important;
+  padding: 20px 0px 0px !important;
+}
+*/
+.rank {
+    display: none;
+}
+
+.link .midcol {
+    margin-right: 6px;
+    margin-left: 0px;
+}
+
+.linklisting {
+    bottom: 0px;
+    margin-top: 0px;
+    padding: 0px !important;
+    background-color: #FFFFFF;
+    border: 2px solid #e88209;
+    margin-left: 20px;
+}
+
+.linklisting .thing {
+    overflow: hidden !important;
+    margin: 0px !important;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 16px;
+    min-height: 50px !important;
+}
+
+.linklisting .odd {
+    background-color: #FAFAFA;
+}
+
+.linklisting .even {
+    background-color: #ededed;
+}
+
+.content .tabmenu {
+    margin: 0px 0px 0px 20px !important;
+}
+
+.tabpane-content {
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+}
+
+/* ==========================================================================*/
+/* Reddit Enhancement Suite (RES) */
+/* ==========================================================================*/
+
+#REScommentNavToggle {
+    margin-right: 10px;
+    padding: 16px;
+    background-color: #ededed;
+    border: 2px solid #e88209;
+}
+
+#progressIndicator {
+    margin-left: 20px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    width: 97% !important;
+    margin-top: 5px !important;
+    background-color: #F5F5F5;
+    border-color: #C1BFBF !important;
+    box-sizing: border-box;
+}
+
+.linklisting .linklisting {
+    margin-left: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.NERPageMarker {
+    background-color: #F5F5F5;
+    border-width: 1px 0px !important;
+    border-style: solid none !important;
+    border-color: #C1BFBF !important;
+    border-radius: 0px !important;
+}
+
+#NERFail {
+    width: 99% !important;
+    height: auto !important;
+    border-width: 0px !important;
+}
+
+.RESshortcutside, .RESDashboardToggle {
+    color: white;
+    background-image: none !important;
+    background-image: none;
+    background-color: #4D6277;
+    border-radius: 0px !important;
+    margin-left: 5px;
+}
+
+.RESshortcutside:hover, .RESDashboardToggle :hover {
+    color: white;
+    background-image: none !important;
+    background-image: none;
+    background-color: #4D6277 !important;
+    border-radius: 0px !important;
+}
+
+.RESshortcutside.remove, .RESDashboardToggle.remove {
+    color: white;
+    background-image: none !important;
+    background-image: none;
+    background-color: #DD513B;
+    border-radius: 0px !important;
+}
+
+.RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
+    color: white;
+    background-image: none !important;
+    background-image: none;
+    background-color: #DD513B !important;
+    border-radius: 0px !important;
+}
+
+/* ==========================================================================*/
+/* Post Comments */
+/* ==========================================================================*/
+
+.sitetable .comment {
+    border-radius: 0px !important;
+}
+
+.md h1, .commentarea h1 {
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.md h2, .commentarea h2 {
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #C1BFBF;
+    font-weight: bold;
+    font-size: 115% !important;
+}
+
+.md h3, .commentarea h3 {
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #C1BFBF;
+    font-weight: bold;
+    font-size: 130% !important;
+}
+
+.commentarea {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding: 7px 0px !important;
+    background-color: #FFFFFF;
+    border: 2px solid #e88209;
+
+}
+
+.link .usertext .md {
+    padding: 0px 5px;
+    border: 1px solid #7DC986;
+}
+
+.gold-accent, .infobar {
+    border-radius: 0px !important;
+    border-color: #C1BFBF;
+    background-color: #F5F5F5;
+    margin: 0px 10px 15px !important;
+}
+
+#noresults {
+    margin-left: 10px !important;
+}
+
+/* code numbering, based on the css found at /r/modtools */
+.md pre {
+    background-color: #d3d3d3 !important;
+    border-left: 31px solid #4D6277;
+    position: relative;
+    margin-top: 25px;
+    line-height: 15px;
+    font-family: "Courier New", courier, monospace;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
+
+}
+
+.md pre code {
+    padding: 15px;
+    overflow: auto;
+    display: block;
+    line-height: 15px;
+    font-family: "Courier New", courier, monospace;
+}
+
+.md pre:after {
+    position: absolute;
+    content: "code:";
+    color: gray;
+    top: -20px;
+    left: -30px;
+}
+
+.md pre:before {
+    height: 100%;
+    color: white;
+    position: absolute;
+    left: -28px;
+    width: 25px;
+    white-space: pre-wrap;
+    direction: rtl;
+    overflow: hidden;
+    content: "#   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250";
+}
+
+/* Make distinguished users stand out more (mods, op and friends) */
+.tagline .author.submitter {
+    color: white !important;
+    background-color: #0055df !important;
+    font-weight: bold !important;
+    border-radius: 0px !important;
+    padding: 0px 2px !important;
+}
+
+.tagline .author.moderator {
+    color: white !important;
+    background-color: #228822 !important;
+    font-weight: bold !important;
+    border-radius: 0px !important;
+    padding: 0px 2px !important;
+}
+
+.tagline .author.friend {
+    color: white !important;
+    background-color: #FF4500 !important;
+    font-weight: bold !important;
+    border-radius: 0px !important;
+    padding: 0px 2px !important;
+}
+
+/* nested commentary boxes, credits for this piece of code go to someone else */
+
+.comment .child, .comment .showreplies {
+    border-left: 0px !important;
+}
+
+.comment {
+    margin-left: 10px !important;
+    margin-right: 5px !important;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+    background-color: #ffffff !important;
+    border: 1px solid #e6e6e6 !important;
+    padding: 5px 8px 0 5px !important;
+}
+
+.comment,
+.comment .comment .comment,
+.comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #fff !important;
+}
+
+.comment .comment,
+.comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment,
+.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #F7F7F8 !important;
+}
+
+/* comment quotes */
+
+#siteTable blockquote:before, .noncollapsed .usertext blockquote:before {
+    content: '“';
+    font-size: 250%;
+    font-family: Georgia, serif;
+    margin: 0;
+    position: relative;
+    line-height: 5px;
+    top: 10px;
+    opacity: 0.2;
+}
+
+#siteTable blockquote, .noncollapsed .usertext blockquote p {
+    margin: 0;
+    font-size: 90%;
+}
+
+#siteTable blockquote:after, .noncollapsed .usertext blockquote:after {
+    content: '”';
+    font-size: 250%;
+    font-family: Georgia, serif;
+    text-align: right;
+    width: 98%;
+    display: block;
+    line-height: 10px;
+    opacity: 0.2;
+    position: relative;
+    top: 10px;
+}
+
+#siteTable blockquote, .noncollapsed .usertext blockquote {
+    display: block;
+    background-color: #F5F5F5;
+    border-style: solid;
+    border-width: 1px 1px 1px 3px;
+    border-color: #C1BFBF;
+    margin: 5px !important;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
+    color: #333333;
+}
+
+/* table comment borders */
+
+.md td, .md th {
+    border: 1px solid #C1BFBF !important;
+}
+
+/* css settings */
+.pretty-form {
+    padding: 5px;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    margin-left: 20px;
+}
+
+#images {
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+}
+
+/* Custom stylesheet */
+.stylesheet-customize-container {
+    width: 100%;
+}
+
+#stylesheet_contents {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: white;
+    color: #4D6277;
+    height: 500px;
+}
+
+#subreddit_stylesheet {
+    display: block;
+    overflow: hidden;
+}
+
+.sheets {
+    margin: 0;
+}
+
+/* ==========================================================================*/
+/* Sidebar Styles */
+/* ==========================================================================*/
+
+/* ==========================================================================*/
+/* Sidebar Styles */
+/* ==========================================================================*/
+
+.side h1 {
+    text-align: center;
+    color: #3F2424;
+    font-size: 16px;
+    border-top: 3px solid #2C697D;
+    padding: 5px;
+    width: 100%;
+}
+
+.side .usertext-body {
+    margin-top: 10px;
+    font-size: 12px !important;
+}
+
+.side .usertext-body hr {
+    margin-right: 2px;
+}
+
+.side .usertext-body ul,
+.side .usertext-body ol,
+.side .usertext-body blockquote {
+    padding-top: 4px;
+    padding-right: 0px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    border: 0 !important;
+    background-color: transparent !important;
+    list-style-type: none;
+    border-radius: 0px !important;
+}
+
+.side .usertext-body ul,
+.side .usertext-body blockquote {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 6px;
+    margin-left: 0px;
+    padding-right: 5px;
+}
+
+.side blockquote {
+    display: block;
+    background-color: #F5F5F5;
+    border: 0 !important;
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-shadow: 0px 1px 3px 1px #F5F5F5;
+}
+
+.side .usertext-body blockquote {
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 3px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.side .usertext-body ol {
+    list-style-type: upper-roman !important;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 0 !important;
+    font-size: 12px;
+    margin-top: 0;
+    margin-right: 0 !important;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 26px;
+}
+
+.side .usertext-body blockquote ol {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !Important;
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: -5px !important;
+    text-align: left !important;
+}
+
+.side .titlebox .usertext-body ol ol {
+    list-style-type: lower-alpha !important;
+    margin-top: -5px;
+    margin-left: -16px !important;
+    color: #000 !important;
+    font-size: 100%;
+    box-shadow: none !Important;
+    width: 198px;
+    padding-right: 10px !important;
+    border: none !important;
+}
+
+.login-form-side {
+    background-color: #F5F5F5;
+    border-width: 3px 0px 3px 0px;
+    border-style: solid;
+    border-color: #C1BFBF;
+}
+
+.side .bottom {
+    display: none !important;
+}
+
+#search input[type="text"] {
+    border: 1px solid #C1BFBF;
+    width: 100%;
+}
+
+#search input[type="submit"] {
+    border: 0 !important;
+    background-image: url('%%search-icon%%');
+    background-position: 0 0;
+}
+
+#search #searchexpando {
+    border-radius: 0px !important;
+    border: 1px solid #cdcdcd;
+    background-color: #ededed;
+    margin: 0 !important;
+    border-top: 0;
+}
+
+#search #searchexpando label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+#search #searchexpando select {
+    width: 100%;
+}
+
+#search #searchexpando label:first-of-type {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#search #searchexpando p {
+    font-size: 11px;
+}
+
+#search #searchexpando .searchexpando-submit input {
+    text-indent: -99999px;
+}
+
+.side .md {
+    overflow: hidden;
+    border-top: 3px solid #2C697D;
+}
+
+.flat-vert.icon-menu.hover a {
+    background-color: #F5F5F5 !important;
+}
+
+.sidebox .spacer {
+    background-color: transparent;
+}
+
+.side {
+    width: 310px;
+    box-sizing: border-box;
+    margin: 20px 20px 40px auto;
+    padding: 10px 10px 10px 24px;
+    overflow: hidden;
+    background: transparent url('%%sidebar-bg%%') repeat-y top left
+}
+
+.redditname, .redditname a {
+    color: #efebe2;
+}
+
+div.titlebox .subscribers span.word {
+    display: none;
+}
+
+div.titlebox .subscribers span.number:after {
+    content: " Architects"
+}
+
+div.titlebox .users-online span.word {
+    display: none;
+}
+
+div.titlebox .users-online span.number:after {
+    content: " Prisoners digging tunnels."
+}
+
+.side hr {
+    visibility: hidden;
+}
+
+.sidecontentbox .content {
+    display: block;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #C1BFBF;
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 0;
+    width: 100%;
+}
+
+.sidecontentbox .title h1 {
+    display: block;
+    margin: 0;
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.sidecontentbox a.helplink {
+    float: none;
+    margin-top: 4px;
+    clear: both;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background: #935000;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.sidecontentbox a.helplink:hover {
+    background: #e88209;
+}
+
+/* Link info*/
+.linkinfo {
+    background-color: transparent;
+    color: #363636;
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0px 15px 0px;
+    border: 0;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px !important;
+    box-sizing: border-box;
+    border: 2px solid #e88209;
+}
+
+.linkinfo .downvotes .number, .linkinfo .upvotes .number, .linkinfo .score .number {
+    font-size: 20px !important;
+    display: block;
+    font-weight: normal !important;
+}
+
+.linkinfo .score .number {
+    color: #005F0C;
+}
+
+.linkinfo .score .word {
+    display: none;
+}
+
+.linkinfo .score {
+    font-size: 11px;
+    display: block;
+    min-width: 80px;
+    margin-left: 30px !important;
+}
+
+.linkinfo .downvotes .word, .linkinfo .upvotes .word {
+    font-size: 11px;
+}
+
+.linkinfo .upvotes, .linkinfo .downvotes, .linkinfo .score {
+    float: left;
+    padding: 5px 10px 5px 0;
+    margin: 8px 10px 10px 0;
+    text-align: center;
+}
+
+.linkinfo .score, .linkinfo .upvotes {
+    border-right: 1px solid #C1BFBF;
+}
+
+.linkinfo .shortlink {
+    clear: both !important;
+    font-size: 10px;
+    margin: 0px 20px 0px 20px;
+    border: 1px solid #E7E6E6;
+    text-align: center;
+}
+
+.linkinfo .shortlink input {
+    background: transparent;
+    border: 0px !important;
+    padding-left: 8px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkinfo .date {
+    padding: 8px;
+    margin-top: -10px;
+    margin-bottom: 7px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* sidebar dropdown menus
+.titlebox .md ul {
+    margin: 0;
+}
+
+.titlebox ul li {
+    background-color: #f2f2f2;
+    border: none;
+    color: black;
+    display: none;
+    padding: 3px 3px 3px 13px;
+    text-align: left;
+    border-top: 1px solid #CCCCCC;
+    margin: 0px;
+}
+
+.titlebox ul li:hover {
+    background-color: #DDDDDD;
+}
+
+.titlebox ul li:nth-child(1):not(.texteditable) {
+    display: block;
+    color: black;
+    background-color: #EFEFEF;
+    display: inline-block;
+    font-size: 14px;
+    border: 0px;
+    border-bottom: 1px dotted #888888;
+    border-left: 3px solid #4D6277;
+    padding: 2px;
+    width: 100%;
+}
+
+.titlebox ul li:nth-child(1):not(.texteditable):hover {
+    color: black;
+    background-color: #2C697D;
+}
+
+.titlebox ul:hover > li {
+    display: block;
+}
+
+.titlebox ul li a:hover {
+    color: black;
+}
+*/
+
+/* sidebar flair buttons */
+
+.titlebox h4 a {
+    color: white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #935000;
+    line-height: 21px;
+    height: 20px;
+    width: 65%;
+    border: 2px solid #e88209;
+    text-align: center;
+    font-size: 12px;
+}
+
+.titlebox h4 a:hover {
+    background-color: #e88209;
+}
+
+/* sidebar submit buttons */
+.morelink .nub {
+    background: none !important;
+}
+
+.side .morelink {
+    border: 0;
+    border-left: 3px solid #e88209;
+    border-right: 3px solid #e88209;
+    height: 40px;
+}
+
+.morelink:hover {
+    background: #2C697D !important;
+    border-color: #C1BFBF;
+    border-left: 3px solid #e88209;
+    border-right: 3px solid #e88209;
+}
+
+.morelink a {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    padding: 12px 0;
+    height: auto;
+    display: block;
+    line-height: 1;
+    box-sizing: border-box;
+    background: #2C697D;
+    font-size: 16px;
+}
+
+.morelink:hover a {
+    text-decoration: none !important;
+    background: #e88209 !important;
+}
+
+/* sidebar icons stolen from rolmos's edurne theme */
+.side a[href*='#icon-'] {
+    color: #000 !important;
+    cursor: default;
+}
+
+.side a[href*='#icon-']:hover {
+    text-decoration: none;
+}
+
+.side a[href='#icon-exclamation']::before {
+    background-position: -16px -32px;
+}
+
+.side a[href='#icon-information']::before {
+    background-position: -54px -51px;
+}
+
+.side a[href='#icon-lightbulb']::before {
+    background-position: -16px -51px;
+}
+
+.side a[href='#icon-comments']::before {
+    background-position: -35px -89px;
+}
+
+.side a[href='#icon-unhappy']::before {
+    background-position: -73px -89px;
+}
+
+.side a[href='#icon-check']::before {
+    background-position: -73px -51px;
+}
+
+.side a[href='#icon-clock']::before {
+    background-position: -35px -51px;
+}
+
+.side a[href='#icon-cross']::before {
+    background-position: -35px -70px;
+}
+
+.side a[href='#icon-smile']::before {
+    background-position: -54px -89px;
+}
+
+.side a[href='#icon-error']::before {
+    background-position: -54px -32px;
+}
+
+.side a[href='#icon-note']::before {
+    background-position: -54px -70px;
+}
+
+.side a[href='#icon-star']::before {
+    background-position: -73px -32px;
+}
+
+.side a[href='#icon-help']::before {
+    background-position: -16px -70px;
+}
+
+.side a[href='#icon-time']::before {
+    background-position: -73px -70px;
+}
+
+.side a[href='#icon-bell']::before {
+    background-position: -35px -32px;
+}
+
+.side a[href='#icon-eye']::before {
+    background-position: -16px -89px;
+}
+
+/* lets put the mess of buttons and info in something that looks like a box */
+.side .redditname {
+    display: block;
+    border-width: 3px 0px 0px 0px;
+    border-style: solid;
+    border-color: #2C697D;
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+}
+
+.titlebox .fancy-toggle-button {
+    display: block;
+    border-width: 0px;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.subButtons {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+    height: 55px;
+    display: block;
+    border-width: 0px;
+    margin: 0px;
+}
+
+.styleToggle,
+.subscribers,
+.users-online,
+.leavemoderator,
+form.flairtoggle,
+.toggle.leavecontributor-button {
+    display: block;
+    background-color: transparent !important;
+    border: 0px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.side .tagline {
+    display: block;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-color: #C1BFBF;
+    margin: 0px 0px 15px 0px !important;
+    padding: 5px;
+}
+
+.side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
+    display: block !important;
+    background-color: #F5F5F5;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+}
+
+/* the subscribe and res buttons */
+.fancy-toggle-button .remove {
+    background-image: none;
+    background-color: #DD513B;
+    border-radius: 0px !important;
+}
+
+.fancy-toggle-button .add {
+    background-image: none;
+    background-color: #4D6277;
+    border-radius: 0px !important;
+}
+
+ul#image-preview-list {
+    overflow: auto;
+}
+
+/* Sticky, edit text in the sidebar  */
+.side .md h3:nth-of-type(1) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    display: block;
+    border-bottom: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    background: #FFFFFF;
+    text-align: left;
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    padding: 7px 7px 7px 27px;
+    left: 0px;
+    right: 0px;
+}
+
+/* ==========================================================================*/
+/* Wiki Styles */
+/* ==========================================================================*/
+
+.wiki-page .content span:first-child:not(.separator):not(.score):not(.linkflair):not(.diff_chg):not(.author):not(.diff_add):not(.diff_sub):not(.diff_next):not(.diff_header) {
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    padding: 5px;
+    margin: 0px 0px 0px 20px !important;
+    display: block;
+}
+
+.wiki-page-content {
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    padding: 5px;
+    margin: 5px 0px 0px 20px !important;
+}
+
+.wiki-page .pageactions {
+    border: 0px !important;
+}
+
+.wikiaction {
+    border-radius: 0px !important;
+}
+
+.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+    margin: 0px !important;
+    background-color: #F5F5F5;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #C1BFBF;
+}
+
+.toc a {
+    font-size: small !important;
+}
+
+.toc {
+    float: right;
+    max-width: 40%;
+    border-color: #C1BFBF;
+}
+
+/* ==========================================================================*/
+/* Flair */
+/* ==========================================================================*/
+
+/*Link Flair*/
+.linkflair-Trigger .linkflairlabel {
+    background: #FFFFFF !important;
+    color: #006600 !important;
+    border-color: black !important
+}
+
+.link-flair {
+    max-width: 1000px
+}
+
+.linkflairlabel {
+    color: #736F6E;
+    margin-left: 5px;
+    max-width: none;
+    font-size: inherit;
+    border: 2px;
+    background-color: transparent;
+    padding: 0;
+    display: inline;
+    margin-right: 6px;
+}
+
+.linkflair-FALSE .linkflairlabel {
+    background: #339933;
+    color: white;
+    border-color: black;
+    font-size: 16px;
+}
+
+/* Flair Colors */
+
+.flair-redflair {
+    color: #ff0000
+}
+
+.flair-orangeflair {
+    color: #ff6600
+}
+
+.flair-yellowflair {
+    color: #ffff00
+}
+
+.flair-greenflair {
+    color: #339933
+}
+
+.flair-blueflair {
+    color: #0000ff;
+    text-indent: 0px;
+}
+
+.flair-violetflair {
+    color: #993399
+}
+
+.flair-goldflair {
+    color: #ffd700
+}
+
+/* Flair formatting flairs are labeled alphabetically  */
+
+.linkflair-Red .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #e18879;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-Orange .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #e1aa79;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-LightGreen .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #bbe179;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-LightBlue .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #79e1d1;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-Yellow .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #e1db79;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-Purple .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #b179e1;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-Pink .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #FCDFFF;
+    font-size: 9px;
+    font-weight: bold;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.linkflair-DarkGreen .linkflairlabel {
+    width: 105px;
+    text-align: center;
+    background-color: #005000;
+    font-size: 9px;
+    font-weight: bold;
+    color: white;
+    border-color: #4C4C4C;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+/* flair settings */
+.flair-settings.fancy-settings > h1 {
+    margin: 0px 0px 5px 20px;
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0px 1px 3px 1px #A5B9CE;
+    padding: 5px;
+}
+
+/*Image user flair by McCheesecake*/
+
+.flair {
+    border: none;
+    padding: 0;
+    /* background: url(%%Mainone%%) no-repeat -9999px -9999px !important; */
+}
+
+.flair-prisoner-0 {
+    background-position: 0px 0px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-1 {
+    background-position: 0px -16px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-2 {
+    background-position: 0px -32px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-3 {
+    background-position: 0px -48px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-4 {
+    background-position: 0px -64px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-5 {
+    background-position: 0px -80px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-6 {
+    background-position: 0px -96px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-7 {
+    background-position: 0px -112px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-8 {
+    background-position: 0px -128px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-9 {
+    background-position: 0px -144px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-10 {
+    background-position: 0px -160px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-11 {
+    background-position: 0px -176px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-12 {
+    background-position: 0px -192px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-13 {
+    background-position: 0px -208px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-14 {
+    background-position: 0px -224px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-15 {
+    background-position: 0px -240px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-16 {
+    background-position: 0px -256px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-17 {
+    background-position: 0px -272px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-18 {
+    background-position: 0px -288px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-19 {
+    background-position: 0px -304px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-20 {
+    background-position: 0px -320px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-21 {
+    background-position: 0px -336px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-22 {
+    background-position: 0px -352px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-23 {
+    background-position: 0px -368px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-24 {
+    background-position: 0px -384px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-25 {
+    background-position: 0px -400px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-26 {
+    background-position: 0px -416px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-27 {
+    background-position: 0px -432px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-28 {
+    background-position: 0px -448px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-29 {
+    background-position: 0px -464px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-30 {
+    background-position: 0px -480px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-31 {
+    background-position: 0px -496px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-32 {
+    background-position: 0px -512px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-33 {
+    background-position: 0px -528px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-34 {
+    background-position: 0px -544px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-35 {
+    background-position: 0px -560px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-36 {
+    background-position: 0px -576px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-37 {
+    background-position: 0px -592px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-38 {
+    background-position: 0px -608px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-39 {
+    background-position: 0px -624px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-40 {
+    background-position: 0px -640px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-41 {
+    background-position: 0px -656px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-42 {
+    background-position: 0px -672px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-43 {
+    background-position: 0px -688px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-44 {
+    background-position: 0px -704px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-45 {
+    background-position: 0px -720px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-46 {
+    background-position: 0px -736px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-47 {
+    background-position: 0px -752px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-48 {
+    background-position: 0px -768px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-49 {
+    background-position: 0px -784px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-50 {
+    background-position: 0px -800px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-51 {
+    background-position: 0px -816px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-52 {
+    background-position: 0px -832px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-53 {
+    background-position: 0px -848px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-54 {
+    background-position: 0px -864px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-55 {
+    background-position: 0px -880px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-56 {
+    background-position: 0px -896px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-57 {
+    background-position: 0px -912px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-58 {
+    background-position: 0px -928px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-59 {
+    background-position: 0px -944px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-60 {
+    background-position: 0px -960px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-61 {
+    background-position: 0px -976px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-62 {
+    background-position: 0px -992px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-63 {
+    background-position: 0px -1008px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-64 {
+    background-position: 0px -1024px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-65 {
+    background-position: 0px -1040px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-66 {
+    background-position: 0px -1056px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-67 {
+    background-position: 0px -1072px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-68 {
+    background-position: 0px -1088px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-69 {
+    background-position: 0px -1104px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-70 {
+    background-position: 0px -1120px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-71 {
+    background-position: 0px -1136px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-72 {
+    background-position: 0px -1152px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-73 {
+    background-position: 0px -1168px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-74 {
+    background-position: 0px -1184px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-75 {
+    background-position: 0px -1200px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-76 {
+    background-position: 0px -1216px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-77 {
+    background-position: 0px -1232px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-78 {
+    background-position: 0px -1248px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-79 {
+    background-position: 0px -1264px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-80 {
+    background-position: 0px -1280px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-81 {
+    background-position: 0px -1296px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-82 {
+    background-position: 0px -1312px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-83 {
+    background-position: 0px -1328px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-84 {
+    background-position: 0px -1344px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-85 {
+    background-position: 0px -1360px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-86 {
+    background-position: 0px -1376px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-87 {
+    background-position: 0px -1392px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-88 {
+    background-position: 0px -1408px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-89 {
+    background-position: 0px -1424px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-90 {
+    background-position: 0px -1440px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-91 {
+    background-position: 0px -1456px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-92 {
+    background-position: 0px -1472px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-93 {
+    background-position: 0px -1488px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-94 {
+    background-position: 0px -1504px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-95 {
+    background-position: 0px -1520px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-96 {
+    background-position: 0px -1536px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-97 {
+    background-position: 0px -1552px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-98 {
+    background-position: 0px -1568px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-99 {
+    background-position: 0px -1584px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-100 {
+    background-position: 0px -1600px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-101 {
+    background-position: 0px -1616px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-102 {
+    background-position: 0px -1632px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-103 {
+    background-position: 0px -1648px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-104 {
+    background-position: 0px -1664px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-105 {
+    background-position: 0px -1680px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-106 {
+    background-position: 0px -1696px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-107 {
+    background-position: 0px -1712px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-108 {
+    background-position: 0px -1728px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-109 {
+    background-position: 0px -1744px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-110 {
+    background-position: 0px -1760px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-111 {
+    background-position: 0px -1776px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-112 {
+    background-position: 0px -1792px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-113 {
+    background-position: 0px -1808px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-114 {
+    background-position: 0px -1824px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-115 {
+    background-position: 0px -1840px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-116 {
+    background-position: 0px -1856px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-117 {
+    background-position: 0px -1872px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-118 {
+    background-position: 0px -1888px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-119 {
+    background-position: 0px -1904px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-120 {
+    background-position: 0px -1920px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-121 {
+    background-position: 0px -1936px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-122 {
+    background-position: 0px -1952px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-123 {
+    background-position: 0px -1968px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-124 {
+    background-position: 0px -1984px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-125 {
+    background-position: 0px -2000px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-126 {
+    background-position: 0px -2016px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-127 {
+    background-position: 0px -2032px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-128 {
+    background-position: 0px -2048px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-129 {
+    background-position: 0px -2064px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-130 {
+    background-position: 0px -2080px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-131 {
+    background-position: 0px -2096px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-132 {
+    background-position: 0px -2112px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-133 {
+    background-position: 0px -2128px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-prisoner-134 {
+    background-position: 0px -2144px !important;
+    background: url(%%Mainone%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-0 {
+    background-position: 0px 0px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 15px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-1 {
+    background-position: 0px -15px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-2 {
+    background-position: 0px -31px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-3 {
+    background-position: 0px -47px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-4 {
+    background-position: 0px -63px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-5 {
+    background-position: 0px -79px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-6 {
+    background-position: 0px -95px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-7 {
+    background-position: 0px -111px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-8 {
+    background-position: 0px -127px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+.flair-fprisoner-9 {
+    background-position: 0px -143px !important;
+    background: url(%%femaleprisoners%%) no-repeat;
+    height: 16px;
+    min-width: 16px;
+    line-height: 16px;
+    text-indent: 18px;
+}
+
+/*Special introversion staff flairs */
+
+.flair-ChrisDelay {
+    background-position: 0px 0px !important;
+    background: url(%%Special-faces-1-and-2%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-AndrewLim {
+    background-position: 0px -24px !important;
+    background: url(%%Special-faces-1-and-2%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-MarkMorris {
+    background-position: 0px -48px !important;
+    background: url(%%Special-faces-1-and-2%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-TomArundel {
+    background-position: 0px -72px !important;
+    background: url(%%Special-faces-1-and-2%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-RyanSumo {
+    background-position: 0px -96px !important;
+    background: url(%%Special-faces-1-and-2%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-JohnKnottebelt {
+    background-position: 0px -745px !important;
+    background: url(%%Special-faces-1-and-2%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-Leander {
+    background-position: 0px -0px !important;
+    background: url(%%Leander%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+/* Special flairs */
+
+.flair-DogFlair {
+    background-position: 0px 0px !important;
+    background: url(%%DogFace%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-SantaFlair {
+    background-position: 0px 0px !important;
+    background: url(%%santa-hat-icon%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-GuardFlair {
+    background-position: 0px 0px !important;
+    background: url(%%rsz-guard%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-ShotgunFlair {
+    background-position: 0px 0px !important;
+    background: url(%%Shotgun%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-TeacherFlair {
+    background-position: 0px 0px !important;
+    background: url(%%OqPGn30%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-ConsuelaFlair {
+    background-position: 0px 0px !important;
+    background: url(%%rsz-1consuela%%) no-repeat;
+    height: 24px;
+    min-width: 24px;
+    line-height: 24px;
+    text-indent: 26px;
+}
+
+.flair-3DGuard {
+    background-position: 0px 0px !important;
+    background: url(%%oezFWb8%%) no-repeat;
+    height: 20px;
+    min-width: 20px;
+    line-height: 20px;
+    text-indent: 22px;
+}
+
+.flair-servo {
+    background-position: 0px 0px !important;
+    background: url(%%faikwansuen%%) no-repeat;
+    height: 20px;
+    min-width: 20px;
+    line-height: 20px;
+    text-indent: 22px;
+}
