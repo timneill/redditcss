@@ -1795,7 +1795,6 @@ div.titlebox span.number:after {
     margin: 0;
     padding: 4px;
     height: 54px;
-    line-height: 50px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14)
 }
 
@@ -2088,21 +2087,6 @@ div.titlebox span.number:after {
 
 .gadget .midcol {
     width: 38px
-}
-
-.side:after {
-    display: block;
-    margin: 0;
-    padding: 10px 0;
-    color: #24A0ED;
-    content: "This subreddit uses the /r/Naut theme.";
-    text-transform: none;
-    font-size: 16px;
-    font-family: Lato, arial, sans-serif;
-    position: absolute;
-    width: 320px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    text-align: center
 }
 
 body.comments-page > .content {
@@ -3059,33 +3043,6 @@ body.comments-page > .content {
     margin: 0 0 4em
 }
 
-#images:before {
-    position: fixed;
-    width: 100%;
-    padding: 16px;
-    color: #fff;
-    left: 0;
-    bottom: 0;
-    background-color: #2E2F31;
-    content: "Hey! There's a FAQ if you just scroll down a little.";
-    font-size: 18px;
-    z-index: 100
-}
-
-#images:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    left: 0;
-    bottom: -1200px;
-    z-index: 100;
-    background-color: #fff;
-    background-image: url(%%faq%%);
-    background-repeat: no-repeat;
-    background-position: 50% 50%
-}
-
 .flair {
     border: none;
     border-radius: 0;
@@ -3133,16 +3090,6 @@ body.comments-page > .content {
 .listing-page .comment .title {
     font-size: 14px;
     margin-left: 8px
-}
-
-.footer-parent {
-    height: 800px;
-    margin-top: 192px;
-    padding: 528px 0 64px;
-    background-image: url(%%footer%%);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover
 }
 
 .footer {
