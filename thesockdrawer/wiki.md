@@ -1,4 +1,18 @@
-## *Verification for Sellers:*
+# The Sock Drawer
+---
+
+### *Who we are*
+
+/r/TheSockDrawer is an adult community of like-minded fetishists who like socks on a woman's foot.  This community is intended to be a comfortable place for sock enthusiasts to come together to enjoy the covered foot.  This is a **positive**, **safe** place for *consenting* adults to enjoy socks.
+
+### *What we do*
+
+/r/TheSockDrawer welcomes all sock related posts.  This includes images, .gifs, videos, or the buying/selling of socks.  Posts can be from a professional studio, or homemade by Reddit's sock enthusiasts.
+
+---
+
+## Verification
+### *for Sellers*
 
 * At least three (3) color pictures (no filters) of you holding a timestamp while wearing socks on your feet. Timestamp is required to be clearly written and will be checked for photoshopping by mods before verification!
 
@@ -8,7 +22,7 @@
 
 **All conditions have to be satisfied for you to be verified and for any selling related posts to be approved. Verified Sellers are also verified to post any non-selling "self" images.**
 
-## *Verification for Buyers:*
+### *for Buyers*
 
 * Account must be at least 1 week old
 
@@ -18,7 +32,7 @@
 
 **All conditions have to be satisfied for you to be verified**
 
-##*Verification for Posters:*
+### *for Posters*
 
 * At least three (3) color pictures (no filters) of you holding a timestamp while wearing socks on your feet. Timestamp is required to be clearly written and will be checked for photoshopping by mods before verification!
 
@@ -28,7 +42,9 @@
 
 **All conditions have to be satisfied for you to be verified. Posting will still be allowed, but posts may be subject to removal pending MOD review.**
 
-***Redditors verified for "self" posts will not be allowed to sell until "SELLER VERIFICATION" conditions have been met.***
+**Redditors verified for "self" posts will not be allowed to sell until "SELLER VERIFICATION" conditions have been met.**
+
+---
 
 ###### **WHAT IS A TIMESTAMP?**
 
