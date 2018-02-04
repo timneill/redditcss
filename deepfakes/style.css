@@ -1,0 +1,147 @@
+.nsfw-stamp {
+    background-color: #d10023;
+    color: #ff9999!important;
+}
+#header-img.default-header {
+}
+.hover a:hover {
+    color:  #205a8f;
+}
+.hover a {
+    color: 	#2d8aca;
+}
+#header {
+    border: none;
+    background: #F7F7F7!important;
+}
+#header-img {
+    margin-left: 5px;
+}
+div.thing.even.link {
+    margin-bottom: 0px!important;
+    background-color: white;
+    box-shadow: 2px 2px 10px grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.thing.even.link:hover {
+    background: #eeeeee;
+}
+div.thing.odd.link {
+    margin-bottom: 0px!important;
+    background-color: white;
+    box-shadow: 2px 2px 10px grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div.thing.odd.link:hover {
+    background: #eeeeee;
+}
+body {
+    background: #F7F7F7;
+}
+div.content {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    z-index: 1!important;
+    margin-right: 300px;
+}
+div.side {
+    z-index: 1!important;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: none;
+}
+.tabmenu li {
+    line-height: 40px;
+    font-size: 13px;
+    margin-left: 3px;
+}
+ul.tabmenu {
+    background: #316FA6!important;
+    height: 40px!important;
+    width: 100%!important;
+}
+.tabmenu li.selected a {
+    color: white;
+    border: none!important;
+}
+.tabmenu li:hover a {
+    color: white;
+    border: none!important;
+}
+.tabmenu li a.choice {
+    color: white!important;
+    background: none;
+    border: none!important;
+    margin-left: 3px;
+}
+.thing .title {
+    color: 	#2d8aca;
+}
+.icon-menu a {
+    color: #369!important;
+}
+.sr-bar a {
+    color: white!important;
+    font-weight: bold;
+}
+#header-bottom-right {
+    background: none!important;
+    color: white;
+}
+.user {
+    color: white!important;
+}
+.user a {
+    color: white;
+}
+.nub {
+    background-image: none!important;
+    background: none!important;
+}
+.morelink {
+    background: #316FA6!important;
+}
+.morelink a {
+    color: 	white!important;
+}
+.titlebox form.toggle, .leavemoderator {
+    color: #151515;
+    background: none!important;
+}
+.titlebox .bottom {
+    color: 	#2d8aca!important;
+}
+.sidecontentbox .title h1 {
+    color: #151515!important;
+}
+.sidecontentbox .content {
+    background: white;
+    border: none!important;
+}
+.icon-menu a {
+    color: #151515!important;
+    background: none;
+}
+.sidebox .spacer {
+    background: none;
+
+}ul.tabmenu {
+     background-color: black;
+     margin-top: 0px!important;
+     height: 19px;
+ }
+ul.tabmenu li a.choice {
+    padding-bottom: 2px;
+}
+#sr-header-area {
+    background: #101e45!important;
+    color: white!important;
+}
+.dropdown.srdrop .selected {
+    color: white!important;
+}
