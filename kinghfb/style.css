@@ -1,0 +1,5 @@
+#header-bottom-left { padding-top: 128px; background-size: cover; background-image: url(%%german-postcards%%); background-position: center 40%;  }
+
+.redditname, .redditname a { color: #fff !important; }
+
+.down { display: none; }
