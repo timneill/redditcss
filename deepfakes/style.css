@@ -96,16 +96,16 @@ body .btn, body button, .c-btn-primary, .wiki-page .wiki-page-content .wiki_butt
 /* Header */
 #header {
     margin: 0;
-    height: 196px;
+    height: 129px;
     border: none;
-    background: url(%%headerimg%%) 50% 50% / cover no-repeat;
     z-index: 1;
+    background-color: transparent;
     box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
 
 /* Subreddits Bar */
 #sr-header-area {
-    background: rgba(0,0,0,0.08);
+    background: rgba(0,0,0,0.8);
     border: none;
     transition: all .15s ease;
     height: 24px;
@@ -358,42 +358,10 @@ body:not(.loggedin) #header-bottom-right {
     background-position: -48px 0;
 }
 
-
-/* Header Start */
-
-/* Snoo */
-#header-img.default-header, #header-img {
-    z-index: 99;
-    width: 0;
-    padding-left: 42px;
-    height: 42px;
-    background: url(%%spritesheet%%) -80px 0;
-    margin: 0 8px 0 0;
-    vertical-align: top;
-    font-size: 0;
-}
-
-#header-img.default-header:hover, #header-img:hover {
-    background-position: -122px 0;
-}
-
-/* Reddit Name */
-#header .pagename {
-    font-size: 0;
-}
-
-#header .pagename a {
-    display: inline-block;
-    line-height: 42px;
-    color: #fff;
-    font: normal 700 42px/42px Lato,Arial,sans-serif;
-    text-shadow: 0 1px 12px rgba(0,0,0,0.2);
-}
-
 /* Tabmenu - Hot / New / Top */
 #header-bottom-left {
     position: absolute;
-    top: 100px;
+    top: 30px;
     left: 16px;
     right: 384px;
 }
@@ -412,7 +380,7 @@ body:not(.loggedin) #header-bottom-right {
     position: absolute;
     left: -16px;
     right: -384px;
-    background: rgba(0,0,0,0.24);
+    background: #0079d3;
     height: 42px;
     z-index: -1;
 }
@@ -1759,7 +1727,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 /* Sidebar */
 .side {
-    margin: 282px 16px 108px 0;
+    margin: 202px 16px 108px 0;
     padding: 0;
     background: none;
     width: 320px;
@@ -1767,21 +1735,9 @@ div.commentarea div.RES-keyNav-activeElement .md {
 
 .side .spacer {
     margin: 0 0 16px;
-}
-
-/* Subreddit Box */
-.side:before {
-    height: 192px;
-    background: url(%%sidebarimg%%);
-    content: "";
-    display: block;
-    position: absolute;
-    top: 100px;
-    width: 320px;
-    z-index: 1;
-    border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-}
+}.side::before {
+     content: none;
+ }
 
 /* Subreddit Name / Subscibers / Online */
 .side .titlebox h1.redditname:before {
@@ -1810,12 +1766,20 @@ div.commentarea div.RES-keyNav-activeElement .md {
     color: #333;
 }
 
+.side .titlebox h1.redditname {
+    margin-top: -147px;
+}
+
 .titlebox span.subscribers {
     position: absolute;
     z-index: 100;
     color: #333;
     font-size: 12px;
     top: 336px;
+}
+
+.subscribers {
+    margin-top: -147px;
 }
 
 div.titlebox span.word {
@@ -1861,9 +1825,8 @@ div.titlebox span.number:after {
 
 /* Subscribe Button */
 .titlebox .fancy-toggle-button {
-    margin: 0;
     position: absolute;
-    margin-left: 208px;
+    margin: -147px 0 0 208px;
     top: 314px;
     z-index: 100;
 }
@@ -1944,6 +1907,7 @@ div.titlebox span.number:after {
     top: 384px;
     z-index: 1;
     width: 320px;
+    margin-top: -147px;
 }
 
 #search input[type=text] {
@@ -2141,7 +2105,7 @@ div.titlebox span.number:after {
 /* Submit Links */
 .submit .morelink {
     position: absolute;
-    top: 442px;
+    top: 294px;
     font-size: 0;
     width: 152px;
 }
@@ -2334,20 +2298,6 @@ div.titlebox span.number:after {
 /* Account Activity */
 .account-activity-box a {
     text-transform: uppercase;
-}
-
-/* /r/Naut Credits - Please do not remove this section */
-.side:after {
-    display: block;
-    margin: 0;
-    padding: 10px 0;
-    color: #24A0ED;
-    content: "Subreddit CSS Theme by /r/Naut";
-    font: 16px Lato,Arial,sans-serif;
-    position: absolute;
-    width: 320px;
-    border: 1px solid rgba(0,0,0,0.06);
-    text-align: center;
 }
 
 /* Comments Page */
@@ -2652,7 +2602,7 @@ div.titlebox span.number:after {
 }
 
 .res-nightmode .submit-page button {
-    border: 0px none #000 !important;
+    border: 0 none #000 !important;
 }
 
 /* Dark Gray */
@@ -2716,7 +2666,7 @@ div.titlebox span.number:after {
 .res-nightmode #search #searchexpando {
     height: 40px;
     line-height: 30px;
-    border: 0px 1px 1px 1px solid #000;
+    border: 0 1px 1px 1px solid #000;
 }
 
 .res-nightmode #search #searchexpando label {
@@ -2793,7 +2743,7 @@ div.titlebox span.number:after {
 }
 
 .res #search #searchexpando {
-    line-height: 40px;
+    line-height: 24px;
 }
 
 .res #searchexpando br {
@@ -2807,7 +2757,7 @@ div.titlebox span.number:after {
 /* Toolbox */
 body.mod-toolbox .tb-action-button {
     height: 22px !important;
-    line-height: 0px;
+    line-height: 0;
 }
 
 /* Comment Body Text */
@@ -3897,8 +3847,8 @@ html.res-commentBoxes .comment {
 }
 
 .res #search #searchexpando label {
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .res #searchexpando .searchexpando-submit {
